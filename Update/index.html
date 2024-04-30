@@ -1,0 +1,219 @@
+<!Doctype html>
+<html lang="en">
+    <head><!--Heading of the page-->
+        <title>
+            Updated page
+        </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/76170cce8c.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <script src="ex.js"></script>
+
+    </head>
+    <script> //Javascript code for nav bar for mobile response
+       
+       
+       
+        function show()
+        {
+            var x = document.getElementById("menuBar")
+            var y=document.getElementById("hamBuger")
+            var z=document.getElementsByClassName("close")
+            console.log(x)
+           
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            }
+            else {
+                x.style.display = "block";
+            }
+        }
+        
+        
+        
+       
+       
+    </script>
+       
+    <body onload="frt()">
+        <link rel="stylesheet" href="./styling/style.css">
+        <nav><!--Nav bar menu items-->
+            <i class="fa-solid fa-utensils fa-2x"> Chill Eats</i>
+        <div class="menu" id="menuBar">
+          
+            <ul>
+                <li class="l1" ><a href=""></a>Home </li>
+                <li class="l2"><a class="about" href="about.html">About Us</a></li>
+                <li class="l3"><a class="link" href="signup.html">Sign Up</a></li>
+                <button class="closee" id="closeMenu" onclick="show()">close</button>
+                
+            </ul>
+
+        </div>
+        <div class="hamburger">
+             <a href="javascript:void(0);"  onclick="show()"><i id="hamBuger" class="fa-solid fa-bars" ></i></a> 
+        </div>
+    </nav><hr class="hr1">
+    <div class="banner">
+       
+        
+            <h1>Buffet</h1>
+            <h4>Official Packages</h4>
+            
+   
+        <table border="1px"> 
+            <tr>
+                <td><i class="fa-solid fa-bowl-food"></i> 40 Food</td>
+                <td><i class="fa-solid fa-champagne-glasses"></i>  19 Drinks  </td>
+                <td><i class="fa-solid fa-mug-hot"></i>  28 Soup  </td>
+            </tr>
+        </table>
+        <h5>ORDER NOW</h5>
+    </div>
+    <div class="content" id="con">
+        <div class="story">
+             <h1>Our Story</h1>
+            <h2>Until I discovered cooking I was never
+                really interested in anything!</h2>
+            <p>Pleased anxious or as in by viewing forbade minutes prevent. Too leave had those get being led weeks blind. Had men rose from down lady able. Its son him ferrars proceed six parlors.</p><br>
+            <p> Advanced diverted domestic sex repeated bringing you old. Possible procured her trifling laughter thoughts property she met way.
+             Companions shy had solicitude favourable own. Which could saw guest man now heard but. Lasted my coming uneasy marked so should. 
+             Gravity letters it amongst herself dearest an windows by. Wooded ladies she basket.</p>
+            <div class="box" border="5px">
+                <table border="2px" >
+                    <tr>
+                        <td class="tablephone"  width="130px" ><i class="fa-solid fa-phone fa-1x"  id="tableicon1"></i> 
+                            <div class="t1"><h4 class="span1">Phone</h4> <br><h5>+123 456 7890</h5></div></td>
+                        <td class="tablemail" width="50px"><i class="fa-solid fa-envelope" id="tableicon2"></i>
+                            <div class="t2"><h4 class="span2">Email </h4> <br></h5>support@chilleats.com</h5></div></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+         <div class="book_table" id="book_table">
+
+           <img src="./images/kitchenutensil.webp" class="utensils">
+            <h1 >BOOK A TABLE</h1>
+            <form>
+                <input type="text" placeholder="Name" class="name"><br>
+                <input type="text" placeholder="Email" class="mail"><br>
+                <select class="dropdown">
+                    <option>1 Person</option>
+                    <option> 2 Persons</option>
+                    <option>3 Persons</option>
+                    <option>4 Persons</option>
+                    <option>More than 4</option>
+                </select><br>
+               <input type="text" placeholder="Date" class="date"><br>
+            <button class="booknow">BOOK NOW</button> 
+            </form>
+        </div>
+    </div>
+    <div class="reviews">
+        <div class="testimonials" id="testimonials">
+            <h3>Reviews</h3>
+            <h4>TESTIMONIALS</h4>
+            <h5 style="margin-top: -1.5%;">__ __</h5>
+            <p>While mirth large of on front. Ye he greater related adapted proceed entered an. Through it examine express promise no. 
+                Past add size game cold girl off how old</p>
+                <div class="card" id="card">
+                      <div class="pizza" id="pizza">
+                       <h1>Awesome Pizza</h1>
+                        <p>Finished no horrible blessing landlord dwelling dissuade if. Rent fond am he in on read. 
+                        Anxious cordial demands settled entered in do to colonel. </p>
+                        <img src="./images/men1.jpg" class="men1"><br>
+                         <h3>MICHEL ATHEM</h3>
+                       <i class="fa-regular fa-star"></i>
+                       <i class="fa-regular fa-star"></i>
+                       <i class="fa-regular fa-star"></i>
+                       <i class="fa-regular fa-star"></i>
+                       <i class="fa-regular fa-star"></i>
+                    </div>
+                     <div class="burger" id="burger">
+                       <h1>Delicious Burger</h1>
+                        <p>"Finished no horrible blessing landlord dwelling dissuade if. Rent fond am he in on read. 
+                        Anxious cordial demands settled entered in do to colonel.</p>
+                        <img src="./images/men1.jpg" class="men1"><br>
+                        <h3>AHEL JOHN</h3>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+                <h5>__ __</h5>
+        </div>
+    </div>
+    <div class="footer">
+      
+            <div class="address">
+                <!--<img class="addlogo" src="./images/kitchenutensil.webp">-->
+                <h1>Chill Eats</h1><hr>
+                <p>20, floor, Queenslad Victoria Building. 60 california street california USA</p>
+                <h3>Phone: +123 456 7890</h3>
+                <h3>Email: support@valid.com</h3>
+            </div>
+            <div class="foodmenu">
+                 <h1>Food Menu</h1><hr>
+                <!--<h2>_ __</h2>-->
+                 <p>Chees croissants</p>
+                <p>Bruschetti</p>
+                <p>Awesome Vegetables</p>
+                <p>Tasty Snacks</p>
+                <p>Meal for whole family</p>
+            </div>
+            <div class="instagram">
+                <h1>Instagram</h1><hr>
+                <div class="row">
+                    <div class="column1">
+                        <img class="photo1" src="./images/photo1.avif" >
+                        <img class="photo2"src="./images/photo2.avif" >
+                        <img class="photo3"src="./images/photo3.avif" >
+                    </div>
+                    <div class="column2">
+                        <img class="photo4"src="./images/photo4.avif">
+                        <img class="photo5" src="./images/photo5.avif">
+                        <img class="photo6" src="./images/photo6.avif">
+                   </div>
+                </div>
+            </div>
+            <div class="hour">
+                 <h1>Opening Hours</h1><hr>
+                 <p>Mon - Tues :  6.00 am - 10.00 pm</p><hr>
+                <p>Wed - Thur :  8.00 am - 6.00 pm</p><hr>
+                <p style="display: inline-block;">Launch</p><p class="every" style="display: inline-block; padding-left: 13%;">: Everyday</p><hr>
+                <p class="sun">Sun</p><p class="close">Closed</p>
+            </div>
+    </div><hr>
+    <div class="footer1">
+        <p>© Copyright 2019. All Rights Reserved by chilleats</p>
+        <div class="anchor">
+            <ul>
+                <li>Terms of user</li>
+                <li >License  </li>
+                <li >Support </li>
+            </ul>
+                
+        </div>
+
+    </div>
+    <hr>
+   
+  
+  <!-- Social media Footer
+     <div class="icons">
+        
+ 
+<i class="fa-brands fa-twitter"></i>
+<i class="fa-brands fa-instagram"></i>
+<i class="fa-brands fa-facebook"></i>
+     </div>-->
+    </body>
+   
+
+</html> 

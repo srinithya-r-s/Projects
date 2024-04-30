@@ -1,0 +1,459 @@
+<!Doctype html>
+<html lang="en">
+
+<head><!--Title of the page -->
+    <meta charset="UTF-8">
+    <title>Sign up</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/76170cce8c.js" crossorigin="anonymous"></script>
+    <script>
+        //Javascript for validations
+
+
+
+        function check(event) {
+            event.preventDefault()
+            console.log("Hi")
+            var fName = document.getElementById("f1name").value;
+
+            var b = ''
+            var count = 0;
+
+
+            if (fName === b) {
+                //console.log("Hello");
+                document.getElementById("p1").style.visibility = "visible";
+                document.getElementById("p1").style.color = "red";
+                document.getElementById("p1").innerHTML = "This field is required";
+                document.getElementById("p1").style.marginTop = "3px";
+                document.getElementById("f1name").style.borderColor = "red";
+            }
+            else if (!((fName >= "a" && fName <= "z") || (fName >= "A" && fName <= "Z"))) {
+                //console.log("Hello");
+                document.getElementById("f1name").style.borderColor = "red";
+                document.getElementById("p1").style.visibility = "visible";
+                document.getElementById("p1").style.marginTop = "3px";
+                document.getElementById("f1name").style.borderColor = "red";
+
+            }
+            else {
+
+                count++;
+
+            }
+
+            var lName = document.getElementById("l1name").value;
+
+
+            if (lName === b) {
+                //console.log("Hello");
+                document.getElementById("p2").style.visibility = "visible";
+                document.getElementById("p2").style.color = "red";
+                document.getElementById("p2").innerHTML = "This field is required";
+                document.getElementById("p2").style.marginTop = "3px";
+                document.getElementById("l1name").style.borderColor = "red";
+            }
+            else if (!((lName >= "a" && lName <= "z") || (lName >= "A" && lName <= "Z"))) {
+                //console.log("Hello");
+                document.getElementById("l1name").style.borderColor = "red";
+                document.getElementById("p2").style.visibility = "visible";
+                document.getElementById("p2").style.marginTop = "3px";
+                document.getElementById("l1name").style.borderColor = "red";
+
+            }
+            else {
+
+                count++;
+
+            }
+
+            var uName = document.getElementById("u1name").value;
+
+            if (uName === b) {
+                //console.log("Hello");
+                document.getElementById("p3").style.visibility = "visible";
+                document.getElementById("p3").style.color = "red";
+                document.getElementById("p3").innerHTML = "This field is required";
+                document.getElementById("p3").style.marginTop = "3px";
+                document.getElementById("u1name").style.borderColor = "red";
+            }
+
+
+            else {
+                count++;
+            }
+
+
+
+            var eMail = document.getElementById("email").value;
+            let atSymbol = eMail.indexOf("@");
+            let dotSymbol = eMail.lastIndexOf(".");
+            let spaceSymbol = eMail.indexOf(" ");
+
+            if (eMail === b) {
+                //console.log("Hello");
+                document.getElementById("p4").style.visibility = "visible";
+                document.getElementById("p4").style.color = "red";
+                document.getElementById("p4").innerHTML = "This field is required";
+                document.getElementById("p4").style.marginTop = "3px";
+                document.getElementById("email").style.borderColor = "red";
+            }
+            else if (!((atSymbol != -1) &&
+                (atSymbol != 0) &&
+                (dotSymbol != -1) &&
+                (dotSymbol != 0) &&
+                (dotSymbol > atSymbol + 1) &&
+                (eMail.length > dotSymbol + 1) &&
+                (spaceSymbol == -1))) {
+                //console.log("Hello");
+                document.getElementById("p4").style.visibility = "visible";
+                document.getElementById("p4").style.color = "red";
+                document.getElementById("p4").style.marginTop = "3px";
+                document.getElementById("email").style.borderColor = "red";
+
+            }
+            else {
+
+                count++;
+            }
+
+
+
+
+            var phone = document.getElementById("p1hone").value;
+            if (phone == b) {
+                //console.log("Hello");
+                document.getElementById("p5").style.visibility = "visible";
+                document.getElementById("p5").style.color = "red";
+                document.getElementById("p5").innerHTML = "This field is required";
+                document.getElementById("p5").style.marginTop = "3px";
+                document.getElementById("p1hone").style.borderColor = "red";
+
+            }
+            else if (!((phone >= 0 && phone <= 9) || (phone[0] == 1) || (phone.length == 10))) {
+                //console.log("Hello");
+                document.getElementById("p5").style.visibility = "visible";
+                document.getElementById("p5").style.color = "red";
+                document.getElementById("p5").style.marginTop = "3px";
+                document.getElementById("p1hone").style.borderColor = "red";
+            }
+            else {
+
+                count++;
+
+            }
+
+
+            var add1 = document.getElementById("a1dd1").value;
+            /* if(str6===b)
+             {
+                 console.log("Hello");
+                 document.getElementById("p6").style.visibility="visible";
+                 document.getElementById("p6").style.color="red";
+                 document.getElementById("a1dd1").style.borderColor="red";
+             }*/
+            if (!((add1 >= "a" && add1 <= "z") || (add1 >= "A" && add1 <= "Z") || (add1 >= 0 && add1 <= 9))) {
+                //console.log("Hello");
+                document.getElementById("p6").style.visibility = "visible";
+                document.getElementById("p6").style.color = "red";
+                document.getElementById("p6").style.marginTop = "3px";
+                document.getElementById("a1dd1").style.borderColor = "red";
+
+            }
+            else {
+
+                count++;
+            }
+
+
+
+            var add2 = document.getElementById("a2dd2").value;
+            /*if(str7===b)
+            {
+                console.log("Hello");
+                document.getElementById("p7").style.visibility="visible";
+                document.getElementById("p7").style.color="red";
+                document.getElementById("a2dd2").style.borderColor="red";
+            }*/
+            if (!((add2 >= "a" && add2 <= "z") || (add2 >= "A" && add2 <= "Z") || (add2 >= 0 && add2 <= 9))) {
+                //console.log("Hello");
+                document.getElementById("p7").style.visibility = "visible";
+                document.getElementById("p7").style.color = "red";
+                document.getElementById("p7").style.marginTop = "3px";
+                document.getElementById("a2dd2").style.borderColor = "red";
+
+            }
+            else {
+
+                count++;
+            }
+
+            var city = document.getElementById("c1ity").value
+
+            /*if(str8===b)
+            {
+                console.log("Hello");
+                document.getElementById("p8").style.visibility="visible";
+                document.getElementById("p8").style.color="red";
+                document.getElementById("c1ity").style.borderColor="red";
+            }*/
+            if (!((city >= "a" && city <= "z") || (city >= "A" && city <= "Z"))) {
+                //console.log("Hello");
+                document.getElementById("c1ity").style.borderColor = "red";
+                document.getElementById("p8").style.visibility = "visible";
+                document.getElementById("p8").style.marginTop = "3px";
+                document.getElementById("c1ity").style.borderColor = "red";
+
+            }
+            else {
+
+                count++;
+
+            }
+
+
+            var zip = document.getElementById("z1ip").value;
+            if (zip === b) {
+                //console.log("Hello");
+                document.getElementById("p9").style.visibility = "visible";
+                document.getElementById("p9").style.color = "red";
+                document.getElementById("p9").innerHTML = "This field is required";
+                document.getElementById("p9").style.marginTop = "3px";
+                document.getElementById("z1ip").style.borderColor = "red";
+            }
+            else if (!((zip >= 0 && zip <= 9) || (zip.length == 5))) {
+                //console.log("Hello");
+                document.getElementById("p9").style.visibility = "visible";
+                document.getElementById("p9").style.color = "red";
+                document.getElementById("p9").style.marginTop = "3px";
+                document.getElementById("z1ip").style.borderColor = "red";
+            }
+            else {
+
+                count++;
+            }
+            var state = document.getElementById("s1tate").value;
+
+
+            var object = {
+                firstName: fName,
+                lastName: lName,
+                userName: uName,
+                email: eMail,
+                phone: phone,
+                address1: add1,
+                address2: add2,
+                state: state,
+                city: city,
+                zipcode: zip
+            };
+            console.log(object);
+            var arr = []
+            arr.push(object)
+            //console.log(arr);
+
+            var formDetails = JSON.stringify(arr)
+            if (count == 9) {
+                localStorage.setItem("arr", formDetails);
+                alert("Form submitted Successfully")
+            }
+
+
+
+        }
+        function showMenu() {
+            var x = document.getElementById("menuBar");
+            var y = document.getElementById("hammer")
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            }
+            else {
+                x.style.display = "block";
+              
+
+            }
+
+        }
+
+
+    </script>
+
+
+
+
+</head>
+
+<body>
+    <link rel="stylesheet" href="./styling/ex.css">
+
+    <nav><!--Logo of the theme-->
+        <i class="fa-solid fa-utensils fa-2x"> Chill Eats</i>
+        <div class="menu" id="menuBar">
+            <!--Nav menu of the page -->
+            <ul>
+                <li class="l1"><a class="link" href="index.html">Home</a></li>
+                <li class="l2"><a href=""></a>About Us</li>
+                <li class="l3"><a class="link" href="">Sign Up</a></li>
+                <button class="closee" id="closeMenu" onclick="showMenu()">close</button>
+
+              
+            </ul>
+
+        </div>
+        <div class="hamburger">
+        <a href="javascript:void(0);" onclick="showMenu()"><i id="hammer" class="fa-solid fa-bars"></i></a>
+        </div>
+
+    </nav>
+
+
+
+    <form id="form" action="one.html"><!--Form input of the page -->
+
+        <h1>SIGNUP</h1>
+
+        <div class="fln">
+
+
+            <label>First Name *</label>
+            <input type="text" id="f1name" name="firstname" required>
+            <p id="p1"> Invalid Firstname</p>
+
+
+
+
+            <label>Last Name </label>
+           
+            <input type="text" id="l1name" name="lastname">
+            <p id="p2"> Invalid Lastname</p>
+
+
+
+
+
+
+            <label>Username *</label>
+            <input type="text" id="u1name" name="username" required>
+            <p id="p3">Invalid Username</p>
+
+
+            <label>Email *</label>
+            <input type="email" id="email" name="email" required>
+            <p id="p4"> Invalid Email</p>
+
+
+            <label id="phone1">Phone *</label>
+            <p id="unicode">+1</p> 
+            <input type="tel" id="p1hone"  required>
+           
+            <p id="p5"> Invalid Phone Number</p>
+
+
+
+
+
+            <label>Address line 1</label>
+            <input type="text" id="a1dd1">
+            <p id="p6"> Invalid Adderss</p>
+
+
+
+
+            <label>Address line 2</label>
+            <input type="text" id="a2dd2">
+            <p id="p7"> Invalid Address</p>
+
+
+            <label class="s">State</label>
+
+            <select id="s1tate">
+                <option>California</option>
+                <option>Texas</option>
+                <option>Oregon</option>
+
+            </select>
+
+
+            <label class="city">City</label>
+            <input type="text" id="c1ity">
+            <p id="p8">Invalid City</p>
+
+
+            <label>Zipcode *</label>
+            <input type="text" id="z1ip" required>
+            <p id="p9"> Invalid Code</p>
+
+
+            <button onclick="check(event)"> Sumbit</button>
+
+        </div>
+    </form>
+</div>
+<div class="footer">
+    <div class="address">
+        <!--<img class="addlogo" src="./images/kitchenutensil.webp">-->
+        <h1>Chill Eats</h1><hr>
+        <p>20, floor, Queenslad Victoria Building. 60 california street california USA</p>
+        <h3>Phone: +123 456 7890</h3>
+        <h3>Email: support@valid.com</h3>
+    </div>
+    <div class="foodmenu">
+         <h1>Food Menu</h1><hr>
+        <!--   <h2>_ __</h2>-->
+         <p>Chees croissants</p>
+        <p>Bruschetti</p>
+        <p>Awesome Vegetables</p>
+        <p>Tasty Snacks</p>
+        <p>Meal for whole family</p>
+    </div>
+    <div class="instagram">
+        <h1>Instagram</h1><hr>
+        <div class="row">
+            <div class="column1">
+                <img class="photo1" src="./images/photo1.avif" >
+                <img class="photo2"src="./images/photo2.avif" >
+                <img class="photo3"src="./images/photo3.avif" >
+            </div>
+            <div class="column2">
+                 <img class="photo4"src="./images/photo4.avif">
+                <img class="photo5" src="./images/photo5.avif" >
+                <img class="photo6" src="./images/photo6.avif" >
+           </div>
+        </div>
+    </div>
+    <div class="hour">
+         <h1>Opening Hours</h1><hr>
+         <p>Mon - Tues :  6.00 am - 10.00 pm</p><hr>
+        <p>Wed - Thur :  8.00 am - 6.00 pm</p><hr>
+        <p style="display: inline-block;">Launch</p><p style="display: inline-block; padding-left: 13%;">  : Everyday</p><hr>
+        <p class="sun">Sun</p><p class="close">Closed</p>
+    </div>
+</div><hr>
+
+<div class="footer1">
+ 
+    <p>© Copyright 2019. All Rights Reserved by chilleats</p>
+    <div class="anchor">
+        <ul>
+            <li class="l1">Terms of user</li>
+            <li class="l2">License  </li>
+            <li class="l3">Support </li>
+        </ul>
+            
+    </div>
+
+</div>
+   <!-- <div class="icons">Social media Footer
+
+
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook"></i>
+    </div>-->
+</body>
+
+
+
+
+
+</html>
