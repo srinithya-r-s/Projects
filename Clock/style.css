@@ -1,0 +1,92 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(251, 255, 255);
+    margin-top: 10%;
+}
+
+.container
+{
+    border: 1px solid rgb(171, 162, 162);
+    border-radius: 100%;
+    width: 350px;
+    height: 350px;
+    box-shadow: 1px 1px 4px rgb(231, 80, 156);
+    position: relative;
+}
+.numbers div
+{
+    position:absolute;
+    font-size: 30px;
+}
+.twelve
+{
+    left:45%;
+    top: 4%;
+}
+.three
+{
+    top:43%;
+    /* left:90%; */
+    right:6%;
+}
+.six
+{
+    bottom:3%;
+    left:47%
+}
+.nine{
+    top:43%;
+    left:5%
+
+}
+.arrow
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.arrow::before
+{
+    content: "";
+    background-color:rgb(231, 80, 156);
+    width:5%;
+    height: 5%;
+    border-radius: 100%;
+}
+.arrow div{
+    position: absolute;
+    transform-origin: bottom center;
+    background-color: rgb(231, 80, 156);
+    width:7px;
+    height:100px;
+    z-index: 3; 
+    bottom: 50%;
+}
+.arrow .hour
+{
+    height:70px;
+    transform: rotate(30deg);
+    background-color: purple;
+}
+.arrow .second
+{
+    background-color: gold;
+    transform: rotate(250deg);
+    height: 140px;
+}
+
+
+/* .secondDesign
+{
+    transform: rotate(var(--hourDegree ));
+}
+.minute
+{
+    transform: rotate(${minuteDegree}deg);
+} */
