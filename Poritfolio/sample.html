@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills with Progress Bars and Percentage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .skill {
+            margin: 10px 0;
+        }
+
+        .skill-name {
+            margin-bottom: 5px;
+            font-weight: bold;  /* Make skill names bold */
+        }
+
+        .progress-container {
+            width: 100%;
+            position: relative;
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            /* Allow positioning of percentage text */
+        }
+
+        .progress {
+            height: 20px;
+            width: 0; /* Set initial width to 0, will be updated in CSS */
+            background-color: #76c7c0;
+            border-radius: 5px;
+            transition: width 0.5s;
+            /* Smooth transition for the progress */
+        }
+
+        .percentage {
+            position: absolute;
+            right: 10px; /* Position percentage on the right side of the bar */
+            top: 0; /* Align it with the top of the progress bar */
+            color: black; /* Color for the percentage text */
+            font-weight: bold; /* Make percentage text bold */
+        }
+    </style>
+</head>
+<body>
+
+    <h2>My Skills</h2>
+    <div class="skill">
+        <div class="skill-name">HTML</div>
+        <div class="progress-container">
+            <div class="progress" style="width: 90%;"></div>
+            <div class="percentage">90%</div> <!-- Percentage text -->
+        </div>
+    </div>
+    <div class="skill">
+        <div class="skill-name">CSS</div>
+        <div class="progress-container">
+            <div class="progress" style="width: 85%;"></div>
+            <div class="percentage">85%</div>
+        </div>
+    </div>
+    <div class="skill">
+        <div class="skill-name">JavaScript</div>
+        <div class="progress-container">
+            <div class="progress" style="width: 80%;"></div>
+            <div class="percentage">80%</div>
+        </div>
+    </div>
+    <div class="skill">
+        <div class="skill-name">React</div>
+        <div class="progress-container">
+            <div class="progress" style="width: 75%;"></div>
+            <div class="percentage">75%</div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+

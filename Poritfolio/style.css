@@ -1,0 +1,524 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    background-color:#FF8882;
+    box-shadow: 5px 1px 15px palevioletred;
+  justify-content: space-between;
+    padding: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    /* position: fixed; */
+   
+  
+   
+}
+.left_head{
+    
+      padding-top:5px;
+      margin-left: 10px;
+     /* padding-left: 1%; */
+     color:rgb(47, 77, 105) 
+}
+.list 
+{
+    list-style: none;
+    
+   display:flex;
+   margin-right: 40px;
+   /* color:rgb(47, 77, 105)  */
+   color: rgb(47, 77, 105);
+  
+}
+
+.list  li{
+   
+    /*padding-left:20%; */
+  padding:10px;
+ 
+}
+.list li a{
+    text-decoration: none; 
+    /* color:rgb(47, 77, 105)  ; */
+    color:rgb(47, 77, 105);
+}
+.list li:hover{
+    text-decoration-line: underline;
+    text-decoration-color: rgb(47, 77, 105) ;
+    cursor: pointer;
+    text-underline-offset:10px; 
+    text-decoration-thickness: 2px;
+
+}
+.home
+{
+    display: flex;
+   
+}
+.left_text
+{
+margin-left: 5%;
+padding:5%;
+margin-top: 5%;
+font-size: 35px;
+font-weight: 50px;
+color: rgb(47, 77, 105) ;
+/* font-family: 'Poppins', sans-serif; */
+font-family: 'Montserrat', sans-serif;
+
+}
+.left_text h6{
+    padding-top: 15px;
+    /* font-family: 'Poppins', sans-serif; */
+}
+.left_text h2{
+   padding-top: 15px;
+    margin-left: -5px;
+}
+.left_text ul{
+    list-style: none;
+    display: flex;
+    gap:15px;
+    padding-top:20px ;
+    font-size: 20px;
+    margin-left: 20px;
+}
+.left_text li
+{
+    border: 2px solid palevioletred ;
+    border-radius: 100px;
+    padding: 10px;
+
+}
+.left_text li:hover{
+    background-color:palevioletred  ;
+    cursor: pointer;
+    
+}
+.right_image
+{
+    display:flex;
+    margin: 5%;
+}
+.right_image img{
+    width:70%;
+    margin-left: 50%;;
+}
+.about{
+   
+
+}
+.about_head
+{
+    align-items: center;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    /* display:block; */
+    color: #FF8882;
+    font-weight: 200px;
+    font-size: 30px;
+    
+}
+.abouttwo
+{
+    display:flex;
+    margin:2% 5% 0 5%;
+}
+.about_image{
+   
+    
+}
+.about_image img
+{
+    width:400px;
+    height:300px;
+    margin-left: 20px;
+}
+.about_text
+{
+  margin:5%;
+ 
+}
+.about_text h2{
+    color:palevioletred;
+    font-family: 'Montserrat', sans-serif;
+}
+.about_text p{
+    padding-top:20px;
+    color:  rgb(47, 77, 105) ;
+    font-family: 'Poppins', sans-serif;
+}
+.about_text ul{
+    list-style: none;
+    display: flex;
+    gap:10px;
+   padding-left: 40%;
+   padding-top: 10px;
+}
+.about_text li
+{
+    border: 2px solid palevioletred;
+    border-radius: 100px;
+    padding:10px
+}
+.skills{
+    margin-top: 5%;
+}
+.skills h2{
+    color:#FF8882;
+    align-items: center;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 200px;
+}
+.skillstwo
+{
+    margin:5% 15% 0 25%;
+  display: flex;
+}
+.skillflex1
+{
+   border: 1px solid rgb(255, 255, 255);
+   box-shadow: 5px 5px 15px palevioletred;
+    padding: 5%;
+
+}
+.skillflex1 h2{
+    color: rgb(47, 77, 105);
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 200px;
+}
+.skillflex1 img{
+    padding-top: 10px;
+    width:160px;
+}
+.progress1 {
+    height: 20px;
+    width: 90%;
+   /* Set initial width to 0, will be updated in CSS */
+    background-color:  #ffd700;
+    border-radius: 5px;
+    
+
+}
+.progress-container1 {
+    position: relative; 
+    background-color: #e0e0e0;
+    border-radius: 5px;
+  margin-top: 10px;
+   
+    
+}
+.percentage1
+{
+    position: absolute;
+    right: 10px; /* Position percentage on the right side of the bar */
+    top: 0; /* Align it with the top of the progress bar */
+    color:palevioletred; /* Color for the percentage text */
+   
+}
+.skillflex2
+{
+   border: 1px solid rgb(255, 255, 255);
+   box-shadow: 5px 5px 15px palevioletred;
+    padding: 5%;
+    margin-left: 25%;
+
+}
+.skillflex2 img{
+    padding-top: 10px;
+    width: 170px;
+  
+}
+.skillflex2 h2{
+    color: rgb(47, 77, 105);
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 200px;
+}
+.progress2 {
+    height: 20px;
+    width: 85%;
+   /* Set initial width to 0, will be updated in CSS */
+    background-color: #ffd700;
+    border-radius: 5px;
+    
+
+}
+.progress-container2 {
+    position: relative; 
+    background-color: #e0e0e0;
+    border-radius: 5px;
+  margin-top: 10px;
+   
+   
+}
+.percentage2
+{
+    position: absolute;
+    right: 10px; 
+    top: 0; 
+    color:palevioletred; 
+   
+}
+.skillthree
+{
+    margin:5% 15% 0 25%;
+    display: flex;
+}
+.skillflex3
+{
+   border: 1px solid rgb(255, 255, 255);
+   box-shadow: 5px 5px 15px palevioletred;
+    padding: 5%;
+  
+
+}
+.skillflex3 img{
+    padding-top: 10px;
+    width: 170px;
+  
+}
+.skillflex3 h2{
+    color: rgb(47, 77, 105);
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: 150px;
+}
+.progress3 {
+    height: 20px;
+    width: 70%;
+    background-color:  #ffd700;
+    border-radius: 5px;
+    
+
+}
+.progress-container3 {
+    position: relative; 
+    background-color: #e0e0e0;
+    border-radius: 5px;
+  margin-top: 10px;
+   
+  
+}
+.percentage3
+{
+    position: absolute;
+    right: 10px; 
+    top: 0; 
+    color:palevioletred; 
+}
+
+.skillflex4
+{
+   border: 1px solid rgb(255, 255, 255);
+   box-shadow: 5px 5px 15px palevioletred;
+    padding: 5%;
+    
+    margin-left: 25%;
+
+}
+.skillflex4 img{
+   
+    width: 165px;
+  
+}
+.skillflex4 h2{
+    color: rgb(47, 77, 105);
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 200px;
+    padding-bottom:20px;
+    margin-bottom: 10px;
+}
+.progress4 {
+    height: 20px;
+    width: 50%;
+   /* Set initial width to 0, will be updated in CSS */
+    background-color:  #ffd700;
+    border-radius: 5px;
+    
+
+}
+.progress-container4 {
+    position: relative; 
+    background-color: #e0e0e0;
+    border-radius: 5px;
+  margin-top: 25px;
+
+}
+.percentage4
+{
+    position: absolute;
+    right: 10px; 
+    top: 0; 
+    color:palevioletred; 
+   
+}
+.skillfour
+{
+    margin:5% 15% 0 25%;
+    display: flex;
+}
+.skillflex5
+{
+   border: 1px solid rgb(255, 255, 255);
+   box-shadow: 5px 5px 15px palevioletred;
+    padding: 5%;
+    
+
+}
+.skillflex5 img{
+    padding-top: 10px;
+    width: 165px;
+  
+}
+.skillflex5 h2{
+    color: rgb(47, 77, 105);
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 200px;
+}
+.progress5 {
+    height: 20px;
+    width: 70%;
+   /* Set initial width to 0, will be updated in CSS */
+    background-color:  #ffd700;
+    border-radius: 5px;
+    
+
+}
+.progress-container5 {
+    position: relative; 
+    background-color: #e0e0e0;
+    border-radius: 5px;
+  margin-top: 10px;
+   
+    /* Allow positioning of percentage text */
+}
+.percentage5
+{
+    position: absolute;
+    right: 10px; /* Position percentage on the right side of the bar */
+    top: 0; /* Align it with the top of the progress bar */
+    color:palevioletred; /* Color for the percentage text */
+   
+}
+
+.skillflex6
+{
+   border: 1px solid rgb(255, 255, 255);
+   box-shadow: 5px 5px 15px palevioletred;
+    padding: 5%;
+    margin-left: 25%;
+
+}
+.skillflex6 img{
+    padding-top: 10px;
+    width: 175px;
+  
+}
+.skillflex6 h2{
+    color: rgb(47, 77, 105);
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 200px;
+ 
+    
+}
+.progress6 {
+    height: 20px;
+    width: 70%;
+   /* Set initial width to 0, will be updated in CSS */
+    background-color:  #ffd700;
+    border-radius: 5px;
+
+    
+
+}
+.progress-container6 {
+    position: relative; 
+    background-color: #e0e0e0;
+    border-radius: 5px;
+  margin-top: 25px;
+   
+    /* Allow positioning of percentage text */
+}
+.percentage6
+{
+    position: absolute;
+    right: 10px; /* Position percentage on the right side of the bar */
+    top: 0; /* Align it with the top of the progress bar */
+    color:palevioletred; /* Color for the percentage text */
+   
+}
+.certificates
+{
+    
+    margin-top: 10%;
+    
+}
+.certificates h2{
+    color:#FF8882;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 200px;
+}
+
+.certificate1
+{
+    display: inline-block;
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: 5px 5px 15px palevioletred;
+    text-align: center;
+    align-items: center;
+    
+    padding:20px;
+    margin:5% 10% 5% 10%;
+    
+}
+.nptel
+{
+    width:400px;
+    padding:10px;
+    height:400px;
+}
+.intern
+{
+    width:350px;
+    height:400px;
+    padding: 10px;
+}
+.contact
+{
+    background-color:#FF8882;
+    text-align: center;
+    align-items: center;
+
+}
+.contact h2{
+    padding-top: 20px;
+    text-align: center;
+    color:rgb(47, 77, 105)
+}
+.contact ul{
+    display: flex;
+    list-style: none;
+    margin-left: 42%;
+    
+    
+}
+.contact li{
+    border: 1px solid palevioletred;
+    border-radius: 100px;
+    padding: 10px;
+    margin: 20px;
+}
+
+
+
