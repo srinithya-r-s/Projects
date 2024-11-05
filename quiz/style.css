@@ -1,0 +1,21 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.card {
+    max-width: 600px;
+    margin: auto;
+}
+
+#answer-buttons .btn {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+#progress-bar {
+    height: 25px;
+}
+
+#next-btn, #restart-btn {
+    width: 200px;
+}
