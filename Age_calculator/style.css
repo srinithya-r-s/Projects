@@ -1,0 +1,42 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.container
+{
+    border: 1px solid black;
+    background-color: white;
+    box-shadow: 5px 10px rgb(195, 176, 176);
+    width: 40%;
+    padding: 30px;
+    margin: 10% auto;
+  
+}
+.form
+{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+h1
+{
+    text-align: center;
+    font-weight: bold;
+}
+input
+{
+    padding: 5px;
+    margin: 10px;
+    width: 35%;
+
+}
+.form button
+{
+    border-radius: 3px;
+    background-color:  #007bff;
+    border: none;
+    padding: 5px;
+    margin-top: 10px;
+}
