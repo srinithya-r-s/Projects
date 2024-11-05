@@ -1,0 +1,78 @@
+Explanation of script.js Code
+
+=>Getting References:
+
+const taskInput = document.getElementById('taskInput');
+const addTaskButton = document.getElementById('addTaskButton');
+const taskList = document.getElementById('taskList');
+
+<!-- These lines get references to the input field, button, and task list from the HTML.
+This allows us to manipulate these elements in JavaScript. -->
+
+=>Adding Event Listener to Button:
+
+addTaskButton.addEventListener('click', function() {
+    // code...
+});
+
+<!-- This adds a click event listener to the "Add Task" button.
+When the button is clicked, the function inside will be executed. -->
+
+=>Getting Task Input Value:
+
+const taskText = taskInput.value.trim();
+<!-- This retrieves and trims the value from the input field to remove any extra whitespace. -->
+
+=>Checking Input:
+
+if (taskText) {
+    // code...
+}
+<!-- If the input is not empty, the code inside the if block executes. 
+ This ensures we don’t add empty tasks. -->
+
+ =>Creating and Adding List Items:
+
+
+const li = document.createElement('li');
+const span = document.createElement('span');
+span.textContent = taskText;
+const deleteButton = document.createElement('button');
+deleteButton.textContent = 'Delete';
+deleteButton.className = 'delete-btn';
+li.appendChild(span);
+li.appendChild(deleteButton);
+taskList.appendChild(li);
+
+<!-- 
+Creates a new li element for the task.
+Creates a span element to hold the task text and sets its content.
+Creates a delete button, sets its text and class, and appends it to the li.
+Appends the li element to the taskList. -->
+
+
+=>Clearing the Input Field:
+
+taskInput.value = '';
+<!-- Clears the input field after adding the task. -->
+
+=>Adding Delete Button Event Listener:
+
+deleteButton.addEventListener('click', function() {
+    taskList.removeChild(li);
+});
+
+<!-- Adds a click event listener to the delete button to remove the task from the list when clicked. -->
+
+Toggling Task Completion:
+
+
+li.addEventListener('click', function() {
+    li.classList.toggle('completed');
+});
+<!-- Adds a click event listener to the list item to toggle a completed class,
+ which styles the task as completed or not based on whether it is clicked. -->
+
+This project demonstrates basic DOM manipulation, event handling,
+ and dynamic UI updates using JavaScript. Feel free to expand upon 
+ this with features like local storage or editing tasks!
